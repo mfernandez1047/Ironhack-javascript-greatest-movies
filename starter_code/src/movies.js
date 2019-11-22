@@ -51,47 +51,24 @@ function orderAlphabetically(array){
         }
     })
 
-    let top20 = copy.splice(0, 20);
+    let topTwenty = copy.splice(0, 20);
 
-    let finalTop20 = top20.map((eachMovie) => {
+    let finalTopTwenty = topTwenty.map((eachMovie) => {
         return eachMovie.title;
     })
 
-    return finalTop20;
+    return finalTopTwenty;
 }
 
 
 // Iteration 4: All rates average - Get the average of all rates with 2 decimals
 function ratesAverage(array) {
-
-    if (array.length == 0) {
-        return 0
+    if(array.length == 0) {
+        return 0;
     }
-
-    let totalRates = array.reduce((a, c) => {
-
-        return a + (c.rate ? c.rate : 0);
-
-    }, 0);
-
-    let avgRate = (totalRates / array.length).toFixed(2);
-
-    return Number(avgRate);
-
 }
-
-
-
 // Iteration 5: Drama movies - Get the average of Drama Movies
 function dramaMoviesRate(array) {
-
-    let dramaMovies = array.filter(eachMovie => {
-        return eachMovie.genre.includes("Drama")
-    });
-
-    let avgDramaMovies = ratesAverage(dramaMovies);
-
-    return avgDramaMovies;
 
 }
 
@@ -103,6 +80,6 @@ let copy = [...array];
 
 
 // BONUS Iteration: Best yearly rate average - Best yearly rate average
-function bestYearAVG(array) {
+function bestYearAvg(array) {
 
 }
