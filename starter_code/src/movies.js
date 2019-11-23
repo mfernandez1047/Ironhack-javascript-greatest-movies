@@ -93,6 +93,7 @@ function turnHoursToMinutes(array) {
             final = (hour * 60 + min);
 
         }
+        
         else if (duration.includes('h')) {
             hour = Number(duration.substring(0, duration.indexOf("h")));
             final = hour * 60;
