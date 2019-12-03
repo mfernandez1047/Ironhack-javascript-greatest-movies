@@ -135,6 +135,7 @@ function turnHoursToMinutes(array) {
             duration: final,
             genre: eachMovie.genre,
             rate: eachMovie.rate
+        
         }
     })
 
